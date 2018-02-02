@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="20CCD835-517B-C403-C6F6-009862FFE0AA" name="USUARIO">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AD08478D-B95C-3AF4-1D8B-DA1A1ACA080A" name="REQUISITO">
 <createdBy>sergi</createdBy>
-<createdTime>2018-01-22 01:27:41 UTC</createdTime>
+<createdTime>2018-01-22 01:27:49 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>diagrama</ownerDesignName>
 <engineerTo>
@@ -16,9 +16,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_usuario" id="F05148CD-6DA5-FD9A-2299-B18C3EF54978">
+<Attribute name="id_requisito" id="C4B63F04-8ED1-3B58-3166-A79DD2F77AE0">
 <createdBy>sergi</createdBy>
-<createdTime>2018-01-22 01:28:10 UTC</createdTime>
+<createdTime>2018-01-22 01:40:11 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>diagrama</ownerDesignName>
 <engineerTo>
@@ -27,9 +27,9 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nombres" id="C6701917-6E30-F449-FF7D-2E068C45E8C6">
+<Attribute name="nombre" id="CFAC8ABA-1AAE-BF86-C1B1-D033B90889BB">
 <createdBy>sergi</createdBy>
-<createdTime>2018-01-22 01:28:15 UTC</createdTime>
+<createdTime>2018-01-22 01:40:16 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>diagrama</ownerDesignName>
 <engineerTo>
@@ -38,9 +38,9 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="paterno" id="0928CF0C-AAC1-40F8-5792-9AE7B748D859">
+<Attribute name="estado" id="36AECCDE-39A1-8AC9-2469-7613D626D929">
 <createdBy>sergi</createdBy>
-<createdTime>2018-01-22 01:28:17 UTC</createdTime>
+<createdTime>2018-01-22 01:40:19 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>diagrama</ownerDesignName>
 <engineerTo>
@@ -49,9 +49,21 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="materno" id="6AD3C7D2-AEDC-517A-832A-52E4B1063FEB">
+<Attribute name="id_meta" id="709C4903-A1CF-6908-CA9B-655EC6C58921">
 <createdBy>sergi</createdBy>
-<createdTime>2018-01-22 01:28:20 UTC</createdTime>
+<createdTime>2018-01-22 01:40:56 UTC</createdTime>
+<generatorID>9AA7A996-8EED-540A-5679-0C5DE88EAD57</generatorID>
+<ownerDesignName>diagrama</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<referedAttribute>57446492-A3A2-0380-BC15-E55C89AAB587</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="observacion" id="EA4CCBA5-10B6-9B90-AD19-FE716FFD6E76">
+<createdBy>sergi</createdBy>
+<createdTime>2018-02-01 19:28:43 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>diagrama</ownerDesignName>
 <engineerTo>
@@ -60,45 +72,22 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cuenta" id="C580A409-AEF2-6F58-F4F9-D9AE22B46309">
+<Attribute name="fecha" id="8EAED04B-D9D7-3094-68E5-9FD4F2B3F243">
 <createdBy>sergi</createdBy>
-<createdTime>2018-01-22 01:28:29 UTC</createdTime>
+<createdTime>2018-02-01 19:28:49 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>diagrama</ownerDesignName>
 <engineerTo>
 <item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
 </engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="contrasena" id="089BD629-BD60-5732-F9EC-AF939BFE279F">
-<createdBy>sergi</createdBy>
-<createdTime>2018-01-22 01:28:32 UTC</createdTime>
-<generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>diagrama</ownerDesignName>
-<engineerTo>
-<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
-</engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_oficina" id="23E83F5F-FE06-93DD-BE58-BF9B4093FED5">
-<createdBy>sergi</createdBy>
-<createdTime>2018-01-22 01:30:01 UTC</createdTime>
-<generatorID>639A286F-160D-94D4-56C6-02C98B5BB616</generatorID>
-<ownerDesignName>diagrama</ownerDesignName>
-<engineerTo>
-<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
-</engineerTo>
-<referedAttribute>43EE01B4-1E74-B335-A815-66109E54EBE8</referedAttribute>
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="AD2F2B74-B44D-080C-9EB9-F1169B25783A" name="USUARIO PK">
+<identifier id="F1AD887E-BB37-7E29-8E9B-4BAE93F2DF9D" name="REQUISITO PK">
 <createdBy>sergi</createdBy>
-<createdTime>2018-01-22 01:28:14 UTC</createdTime>
+<createdTime>2018-01-22 01:40:15 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>diagrama</ownerDesignName>
 <engineerTo>
@@ -106,7 +95,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>F05148CD-6DA5-FD9A-2299-B18C3EF54978</attributeRef>
+<attributeRef>C4B63F04-8ED1-3B58-3166-A79DD2F77AE0</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
