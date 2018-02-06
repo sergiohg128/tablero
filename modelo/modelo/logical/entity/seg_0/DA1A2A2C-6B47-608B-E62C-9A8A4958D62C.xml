@@ -1,0 +1,187 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DA1A2A2C-6B47-608B-E62C-9A8A4958D62C" name="ACTIVIDAD">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:27:36 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_actividad" id="61436239-0F7B-E135-246D-98ECCDD1BD6A">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:28:43 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="A05D2157-8F77-3393-E664-EF7ECB521641">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:28:47 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado" id="39A60CB4-9892-0105-E069-7719C0F23FE4">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:29:10 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_creacion" id="E8167B59-8A1C-607D-EF90-F5033BEDECEA">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:29:16 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="presupuesto" id="AE5765B8-D6B5-E16C-1AA2-3E2E589F6057">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:28:51 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_inicio" id="BAE80E70-51CE-1C43-F3F2-11AC5FD9CEC0">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:29:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_fin_esperada" id="F13C461C-446C-A75A-369D-B7D8A9A0A9FA">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:29:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_fin" id="076F3CE7-2BCA-F77F-490B-4B5702F56865">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:29:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero_resolucion" id="21041129-128F-EA1A-CD7A-D9A37D0EF100">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:31:02 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_resolucion" id="9A881E10-182B-76F2-6A5C-0AC3B3460ACA">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:31:13 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero_visto" id="D1DE09EB-B864-8A3A-578F-7DB0B20548CD">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:31:18 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_visto" id="7AA83AF7-D948-46F2-55E7-EB05A765DADB">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:31:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion_visto" id="89EC4C94-2CDF-D7F7-45D4-337F28A86009">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:31:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C02D8D44-FF8F-678E-4944-74CC76E06314" name="ACTIVIDAD PK">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:28:46 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>61436239-0F7B-E135-246D-98ECCDD1BD6A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

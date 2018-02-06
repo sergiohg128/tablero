@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AC041704-B05E-6CE1-E180-2D5CE720EAD0" name="RESPONSABLE">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:27:43 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_responsable" id="4EA5E1B1-7916-9FC3-D7A1-00370239406B">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:30:21 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_usuario" id="E465BA74-295B-E81D-6DC5-4289C4A62D53">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:30:36 UTC</createdTime>
+<generatorID>C1C46CF0-8665-7536-24CB-EC42A04DE169</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<referedAttribute>F05148CD-6DA5-FD9A-2299-B18C3EF54978</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_actividad" id="9A9F281A-0156-1E2B-5609-D65B0F79FF49">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:30:38 UTC</createdTime>
+<generatorID>BFB91853-7638-C408-B85A-6B5D47C84C26</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<referedAttribute>61436239-0F7B-E135-246D-98ECCDD1BD6A</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0B04D3D5-3507-B5D1-F140-54C66FA1279F" name="RESPONSABLE PK">
+<createdBy>sergi</createdBy>
+<createdTime>2018-01-22 01:30:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="ED1BAB2A-09F2-779B-FD10-0647AEB6F91A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4EA5E1B1-7916-9FC3-D7A1-00370239406B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
