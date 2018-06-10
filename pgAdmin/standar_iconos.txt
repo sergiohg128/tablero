@@ -1,0 +1,16 @@
+standar de iconos
+oficinas: fa-institution
+usuarios:  fa-user
+actividades: fa-magic
+asignaciones: fa-code-fork
+creaciones: fa-magic
+monitoreos: fa-crosshairs
+
+-seleccionado: (icon-checkmark)
+fa fa-check-square-o
+
+-no seleccionado: (icon-plus)
+fa fa-square-o
+
+-eliminar:
+fa-remove (alias)
