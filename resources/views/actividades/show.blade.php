@@ -329,10 +329,10 @@
 											<td class="text-center">{{$loop->index+1}}</td>
 											<td>{{$meta->nombre}}</td>
 											<td class="text-center">
-												{{ date("d/m/Y", strtotime($meta->fecha_inicio))}}
+												@if ($meta->estado != 'P') {{ date("d/m/Y", strtotime($meta->fecha_inicio))}} @endif
 											</td>
 											<td class="text-center">
-												{{ date("d/m/Y", strtotime($meta->fecha_fin))}}
+												@if ($meta->estado == 'F') {{ date("d/m/Y", strtotime($meta->fecha_fin))}} @endif
 											</td>
 											<td class="text-center">
 												@if ($meta->estado == 'P')
@@ -343,7 +343,9 @@
 											<td class="text-right">{{number_format($meta->presupuesto, 2, '.', ',')}}</td>
 											<td class="text-center">
 												<a href="{{route('metas.show', [$actividad->id, $meta->id])}}" title="Ver" class="btn btn-xs btn-flat btn-warning"><i class="fa fa-eye"></i></a>
+												@if ($meta->estado != 'F')
 												<a href="{{route('metas.edit', [$actividad->id, $meta->id])}}" title="Editar" class="btn btn-xs btn-flat btn-success"><i class="fa fa-pencil"></i></a>
+												@endif
 												@if ($meta->creador->id == Auth::user()->id)
 												<button type="button" class="btn btn-xs btn-flat btn-danger" data-toggle="modal" data-target="#modalElimMeta{{$meta->id}}" title="Eliminar"><i class="fa fa-trash"></i></button>
 												<div class="modal fade" id="modalElimMeta{{$meta->id}}" aria-hidden="true">

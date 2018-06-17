@@ -51,7 +51,7 @@ class GastoController extends Controller
 			}
 		}
 		
-		return redirect()->route('actividades.index');
+		return redirect('actividades/'.$meta->actividad->id.'/metas/'.$meta->id);
 
     }
 

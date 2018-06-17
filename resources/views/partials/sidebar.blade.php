@@ -50,7 +50,8 @@
       @endif
 
       
-        <li class="@yield('sidebar_page_reportes', '')"><a href="{{ url('reportes') }}" }}><i class="fa fa-institution"></i> <span>Reportes</span></a></li>
+        <li class="@yield('sidebar_page_reportes', '')"><a href="{{ url('reportes') }}" }}><i class="fa ion-android-document"></i> <span>Reportes</span></a></li>
+        <li class="@yield('sidebar_page_manual', '')"><a href="{{ url('manual') }}" }}><i class="fa ion-document"></i> <span>Manual</span></a></li>
       
       </ul>
     <!-- /.sidebar-menu -->

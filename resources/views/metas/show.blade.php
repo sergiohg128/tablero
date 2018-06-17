@@ -104,8 +104,8 @@
 												</div>
 											</div>
 											<div class="box-body">
-												<p class="card-title">Fecha Inicial: {{ date("d/m/Y", strtotime($meta->fecha_inicio)) }}</p>
-												<p class="card-text">Fecha Final: {{ date("d/m/Y", strtotime($meta->fecha_fin)) }}</p>
+												<p class="card-title">Fecha Inicial: @if($meta->estado != 'P'){{ date("d/m/Y", strtotime($meta->fecha_inicio)) }} @else - @endif</p>
+												<p class="card-text">Fecha Final: @if($meta->estado == 'F') {{ date("d/m/Y", strtotime($meta->fecha_fin)) }} @else - @endif</p>
 											</div>
 										</div>
 									</div>
@@ -427,7 +427,7 @@
 								<h5 class="widget-user-desc"><span id="user-puesto"></span></h5>
 							</div>
 							<div class="widget-user-image">
-								<img class="img-circle" src="{{ url('dist/img/user1-128x128.jpg')}}" alt="User Avatar">
+								<img class="img-circle" id='user-imagen' src="{{ url('dist/img/user1-128x128.jpg')}}" alt="User Avatar">
 							</div>
 							<div class="box-footer">
 								<div class="row">

@@ -174,8 +174,13 @@ class ReportesController extends Controller
 		    					<td>'.$cont.'</td>
 		    					<td class="izquierda">'.$actividad->nombre.'</td>
 		    					<td>'.$actividad->monitor->completo().'</td>
-		    					<td>'.date("d-m-Y", strtotime($actividad->fecha_inicio)).'</td>
-		    					<td>'.date("d-m-Y", strtotime($actividad->fecha_fin)).'</td>
+		    					<td>'.date("d-m-Y", strtotime($actividad->fecha_inicio)).'</td>';
+		    	if($actividad->fecha_fin!=null){
+		    		$html = $html . '<td>'.date("d-m-Y", strtotime($actividad->fecha_fin)).'</td>';
+		    	}else{
+		    		$html = $html . '<td>-</td>';
+		    	}
+		    	$html = $html .'
 		    					<td>'.$actividadestado.'</td>
 		    					<td>'.$metas.'</td>
 		    					<td>'.$metasCumplidas.'</td>
@@ -228,7 +233,7 @@ class ReportesController extends Controller
 			    			<li><b>Fecha de Creación: </b>'.date("d-m-Y", strtotime($actividad->fecha_creacion)).'</li>
 			    			<li><b>Fecha de Inicio: </b>'.date("d-m-Y", strtotime($actividad->fecha_inicio)).'</li>
 			    			<li><b>Fecha de Fin Esperada: </b>'.date("d-m-Y", strtotime($actividad->fecha_fin_esperada)).'</li>';
-		if($actividad->fecha_fin_esperada!=null){
+		if($actividad->fecha_fin!=null){
 			$html = $html . '<li><b>Fecha de Fin: </b>'.date("d-m-Y", strtotime($actividad->fecha_fin)).'</li>';
 		}
 		if($actividad->numero_resolucion!=null){

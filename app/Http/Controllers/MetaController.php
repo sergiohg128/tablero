@@ -203,7 +203,7 @@ class MetaController extends Controller
     {
         $meta = Meta::findOrFail($id);
 
-        if ($meta->actividad->creador_id == Auth::user()->id) {
+        if ($meta->creador_id == Auth::user()->id) {
             $meta->delete();
             return back()->with('info-delete', 'Eliminado correctamente');
         }

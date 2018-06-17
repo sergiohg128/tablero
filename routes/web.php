@@ -90,3 +90,5 @@ Route::resource('indicadores', 'IndicadorController');
 Route::get('reportes', 'ReportesController@index');
 Route::post('reporte', 'ReportesController@reporte')->name('reportes.generar');
 Route::post('reporte2', 'ReportesController@reporte2')->name('reportes.generar2');
+
+Route::get('manual', 'HomeController@manual')->name('manual');
