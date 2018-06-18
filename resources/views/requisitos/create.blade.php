@@ -4,11 +4,11 @@
 
   <div class="form-group">
     {{ Form::label('nombre', 'Nombre', ['class'=>'control-label']) }}
-    {{ Form::text('nombre', null, ['class'=>'form-control form-control-sm', 'placeholder'=>'Nombre de la oficina']) }}
+    {{ Form::text('nombre', null, ['class'=>'form-control form-control-sm', 'placeholder'=>'Nombre']) }}
   </div>
 
   <div class="form-group">
-    {{ Form::label('nombre', 'Nombre', ['class'=>'control-label']) }}
+    {{ Form::label('observacion', 'Observacion', ['class'=>'control-label']) }}
     {{ Form::textarea('observacion', null, ['class'=>'form-control', 'rows'=>'5', 'placeholder'=>'Observacion']) }}
   </div>
 

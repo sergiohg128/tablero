@@ -63,6 +63,6 @@ class RequisitoController extends Controller
     {
         $requisito = Requisito::findOrFail($id);
         $requisito->delete();
-        return redirect('requisitos');
+        return redirect('metas/'.$requisito->meta_id.'/requisitos/create');
     }
 }

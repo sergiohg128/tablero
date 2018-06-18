@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="{{ url('css/jquery.cleditor.css') }}"/>
 <script src="{{ url('js/jquery-2.1.4.js') }}"></script>
 <script src="{{ url('js/jquery.cleditor.min.js') }}"></script>
+<script src="{{ url('js/jquery.cleditor-table.min.js') }}"></script>
 {{ Form::model($meta, ['action'=>['MetaController@informacioneditar', $meta->id], 'method'=>'PUT']) }}
 	{{ Form::hidden('id', null, ['id'=>'id']) }}
   <div class="box box-primary">
@@ -39,8 +40,14 @@
   </div>
 {!! Form::close() !!}
 <script>
-	  
-    $("textarea").cleditor({ controls: "source bold italic underline strikethrough subscript superscript | font size | color | bullets numbering | outdent indent | alignleft center alignright justify | undo redo" }).focus();
+    
+    $("textarea").cleditor(
+      {
+        height: 500,
+        styles:     [["Párrafo", "<p>"], ["Encabezado 1", "<h1>"], ["Encabezado 2", "<h2>"],
+                    ["Encabezado 3", "<h3>"],  ["Encabezado 4","<h4>"],  ["Encabezado 5","<h5>"],
+                    ["Encabezado 6","<h6>"]],
+      }).focus();
         
 </script>
 @endsection

@@ -34,7 +34,11 @@ Route::get('metas/{meta_id}/requisitos/{requisito_id}/edit', 'RequisitoControlle
 Route::resource('requisitos', 'RequisitoController');
 
 Route::post('users/post_js', 'UserController@post_js');
-Route::resource('users', 'UserController');
+Route::resource('users', 'UserController',['except'=> [
+	'pass'
+]]);
+
+Route::get('users/pass/{user_id}','UserController@pass');
 
 Route::post('actividades/post_js', 'ActividadController@post_js');
 Route::get('actividades/asignaciones', 'ActividadController@asignaciones');

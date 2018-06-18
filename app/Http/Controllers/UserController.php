@@ -81,6 +81,15 @@ class UserController extends Controller
         return redirect('users');
     }
 
+    public function pass($id, Request $request)
+    {
+      $pass = Hash::make("123");
+      $user = User::findOrFail($id);
+      $user->password = $pass;
+      $user->save();
+      return redirect('users');
+    }
+
 
     public function post_js(Request $request){
       if($request->op=='oficina_disponible'){//verifica si la oficina aun no tiene un jefe asignado

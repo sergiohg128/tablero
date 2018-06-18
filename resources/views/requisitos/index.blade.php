@@ -79,7 +79,7 @@
                       @endif
                     </td>
                     <td>{{ $requisito->observacion }}</td>
-                    <td>{{date("d-m-Y", strtotime($requisito->fecha_completado))}}</td>
+                    <td>@if($requisito->fecha_completado!=null){{date("d-m-Y", strtotime($requisito->fecha_completado))}} @endif</td>
                     <td>
                       {{ Form::open(['action'=>['RequisitoController@destroy', $requisito->id], 'method'=>'DELETE']) }}
                         <a href="{{ url('metas/'.$meta->id.'/requisitos/'.$requisito->id.'/edit') }}" class="btn btn-success btn-xs btn-flat"><i class="fa fa-pencil"></i></a>

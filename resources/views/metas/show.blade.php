@@ -277,7 +277,6 @@
 										@if ($meta->actividad->monitor_id == Auth::user()->id)
 										<a href="{{ route('monitoreo.create', $meta->id) }}" class="btn btn-xs btn-info"><i class="fa fa-plus"></i></a>
 										@endif
-										<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
 									</div>
 									<!-- /.box-tools -->
 								</div>
@@ -347,7 +346,6 @@
              						<h3 class="box-title"><i class="ion ion-clipboard"></i> Requisitos</h3>
               						<div class="box-tools pull-right">
 										<a href="{{ url('metas/'.$meta->id.'/requisitos/create') }}" class="btn btn-xs btn-info"><i class="fa fa-plus"></i></a>
-                						<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
               						</div>
               						<!-- /.box-tools -->
             					</div>
@@ -358,8 +356,8 @@
 											<tr>
 												<th>ID</th>
 												<th>Nombre</th>
-												<th>estado</th>
-												<th>observacion</th>
+												<th>Estado</th>
+												<th>Observacion</th>
 												<th>Fecha completado</th>
 												<th></th>
 											</tr>

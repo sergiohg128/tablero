@@ -97,6 +97,7 @@
               <label for="jefe" class="form-check-label">Jefe de oficina</label>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -108,7 +109,27 @@
       </div>
     </div>
   </div>
+
 {!! Form::close() !!}
+  <div class="box box-primary">
+    <div class="box-header with-border">
+      <i class="fa fa-gears"></i>
+      <h3 class="box-title">Restablecer Contraseña</h3>
+      <p>Al hacer click en el siguiente botón, la contraseña del usuario cambiará a 123</p>
+    </div>
+
+    <div class="box-body">
+      <div class="row">
+        <div class="col col-sm-12">
+          <div class="form-group">
+            <div class="input-group">
+              <a href="{{ url('users/pass/'.$user->id) }}"><button class="btn btn-sm btn-warning">RESTABLECER CONTRASEÑA</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 @endsection
 

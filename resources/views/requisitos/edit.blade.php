@@ -3,13 +3,13 @@
   {{ Form::hidden('meta_id', $meta->id)}}
 
   <div class="form-group">
-    {{ Form::label('estadso', 'Estado', ['class'=>'control-label']) }}
+    {{ Form::label('estado', 'Estado', ['class'=>'control-label']) }}
 
     <?php
       $opciones[0] = 'En proceso';
       $opciones[1] = 'Completado';
      ?>
-    {!! Form::select('estado',$opciones,null,['class'=>'form-control', 'placeholder'=>'Seleccione una oficina']) !!}
+    {!! Form::select('estado',$opciones,null,['class'=>'form-control']) !!}
   </div>
 
   <div class="form-group">
