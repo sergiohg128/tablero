@@ -9,7 +9,7 @@
     <p>Hola! Ha sido registrado en el Balance Score Card UNPRG</p>
     <p>Su usuario es: {{$usuario}}</p>
     <p>Su contraseña por defecto es: 123</p>
-	<p>Puede ingresar haciendo click <a href="bsc.unprg.edu.pe">AQUI</a></p>
+	<p>Puede ingresar haciendo click <a href="vrinv.unprg.edu.pe/tablero">AQUI</a></p>
     <p>No olvide cambiar su contraseña en el menú perfil.</p>
 </body>
 </html>
