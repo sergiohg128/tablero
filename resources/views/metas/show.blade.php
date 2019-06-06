@@ -70,7 +70,7 @@
 											<tbody>
 												<tr>
 													<td>{{ $meta->presupuesto}}</td>
-													@php $total_gasto = 0 @endphp @foreach ($meta->gastos as $gasto) @php $total_gasto = $gasto->monto @endphp @endforeach
+													@php $total_gasto = 0 @endphp @foreach ($meta->gastos as $gasto) @php $total_gasto += $gasto->monto @endphp @endforeach
 													<td>{{$total_gasto}}</td>
 													<td>{{ $meta->presupuesto - $total_gasto }}</td>
 												</tr>

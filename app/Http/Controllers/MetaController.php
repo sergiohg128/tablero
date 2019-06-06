@@ -215,6 +215,7 @@ class MetaController extends Controller
     public function informacion($idactividad,$idmeta)
     {
         $meta = Meta::findOrFail($idmeta);
+        $actividad = Actividad::find($meta->actividad_id);
 
 
         if(Auth::user()->tipo=='admin'){

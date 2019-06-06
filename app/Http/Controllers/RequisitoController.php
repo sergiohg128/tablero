@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Requisito;
-use App\meta;
+use App\Meta;
 
 class RequisitoController extends Controller
 {
