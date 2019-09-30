@@ -19,6 +19,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 	<link rel="stylesheet" href="{{ url('bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css') }}">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 	<link rel="stylesheet" href="{{ url('css/select2.css') }}">
+	<link rel="shortcut icon" href="{{ url('images/logo.ico') }}" />
 	@yield('css')
 	<link rel="stylesheet" href="{{ asset('css/style.css') }}">
 	@yield('head_extras')

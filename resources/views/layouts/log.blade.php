@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="{{  url('dist/css/AdminLTE.min.css') }}">
   <link rel="stylesheet" href="{{  url('plugins/iCheck/square/blue.css') }}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="shortcut icon" href="{{ url('images/logo.ico') }}" />
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
